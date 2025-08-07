@@ -68,6 +68,11 @@ python -m venv venv
 
 - It creates a folder called `venv` that stores all project-specific packages.
 
+This tells your computer to use Python.
+"-m"	This runs a Python module instead of a script or file.
+"venv"	This is the name of the module that creates a virtual environment.
+"venv"	This is also the name of the folder it will create for the env.
+
 ---
 
 ### ▶️ Step 4: Activate the Virtual Environment
