@@ -51,10 +51,10 @@ Make sure you have the following installed on your system:
 2. Navigate to the folder where you want to save the project.
 3. Run this command (replace the link with your GitHub repo if needed):
 
-\`\`\`bash
+```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-\`\`\`
+```
 
 ---
 
@@ -62,9 +62,9 @@ cd your-repo-name
 
 This will isolate the project’s packages from the global system:
 
-\`\`\`bash
+```bash
 python -m venv venv
-\`\`\`
+```
 
 - It creates a folder called `venv` that stores all project-specific packages.
 
@@ -80,14 +80,14 @@ This tells your computer to use Python.
 This step **starts** the virtual Python environment.
 
 - **Windows:**
-  \`\`\`bash
+  ```bash
   venv\\Scripts\\activate
-  \`\`\`
+  ```
 
 - **macOS/Linux:**
-  \`\`\`bash
+  ```bash
   source venv/bin/activate
-  \`\`\`
+  ```
 
 You’ll now see `(venv)` in your terminal — that means it's working.
 
@@ -97,9 +97,9 @@ You’ll now see `(venv)` in your terminal — that means it's working.
 
 Inside your virtual environment, install commonly used packages:
 
-\`\`\`bash
+```bash
 pip install numpy pandas matplotlib biopython jupyter
-\`\`\`
+```
 
 - `numpy` – numerical computing  
 - `pandas` – data handling  
@@ -113,9 +113,9 @@ pip install numpy pandas matplotlib biopython jupyter
 
 This will create a list of all the installed libraries and versions:
 
-\`\`\`bash
+```bash
 pip freeze > requirements.txt
-\`\`\`
+```
 
 - A file named `requirements.txt` will be created.
 - This helps **recreate the same setup later**.
@@ -126,9 +126,9 @@ pip freeze > requirements.txt
 
 If you (or someone else) want to install all packages again later:
 
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 Then, everything will be installed automatically.
 
